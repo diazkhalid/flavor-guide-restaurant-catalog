@@ -8,8 +8,11 @@ class Hero extends HTMLElement {
     this.innerHTML = `
       <div class="hero" id="hero">
         <picture class="hero__img">
-        <source media="(max-width: 480px)" srcset="./images/hero-image_4-small.jpg">
-        <source media="(max-width: 800px)" srcset="./images/hero-image_4-large.jpg">
+        <source type="image/webp" media="(max-width: 480px)" srcset="./images/hero-image_4-small.webp">
+        <source type="image/webp" media="(max-width: 800px)" srcset="./images/hero-image_4-large.webp">
+        <source type="image/webp" srcset="./hero-image_4.webp">
+        <source type="image/jpeg" media="(max-width: 480px)" srcset="./images/hero-image_4-small.jpg">
+        <source type="image/jpeg" media="(max-width: 800px)" srcset="./images/hero-image_4-large.jpg">
             <img src="./hero-image_4.jpg" alt="restaurant hero image">
         </picture>
         <div class="hero__content">
