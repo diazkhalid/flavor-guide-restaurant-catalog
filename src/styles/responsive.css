@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 570px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+        margin-right :5px;
+    }
+
+    .navbar {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (min-width: 864px) {
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+
+}
+
+
+@media screen and (max-width: 855px) {
+    .hero__content {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+    .explore__label {
+        font-size: 40px;
+    }
+
+    .hero__description {
+        font-size: 20px;
+    }
+
+    .post-item__title {
+        font-size: 27px;
+    }
+
+    .post-item__date {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box7 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .box1 h1 {
+        font-size: 40px;
+    }
+
+    .wrapper h4 {
+        font-size: 20px;
+    }
+
+    .wrappper th {
+        width: 10%;
+    }
+
+    tr {
+        font-size: 15px;
+    }
+
+    .custName {
+        font-size: 17px;
+    }
+
+    .custDate {
+        font-size: 17px;
+    }
+
+    .menu-item {
+        font-size: 15px;
+    }
+
+    .reviewText {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .post-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero__img {
+        min-width: 1000px;
+    }
+
+    .hero__img img {
+        min-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .header__menu {
+        display: none;
+    }
+
+    .nav-item {
+        display: flex;
+    }   
+}
+
+
+@media screen and (max-width: 1301px) {
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-2000px, 0);
+        transform: translate(-2000px, 0);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+        display: block;
+
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+        list-style: none;
+        text-align: center;
+        font-family: 'Graduate', cursive;
+    }
+}
+
+@media screen and (max-width: 1212px) {
+    th {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .headline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    main {
+        max-width: 1600px;
+    }
+}
