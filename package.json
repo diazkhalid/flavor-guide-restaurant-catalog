@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist",
+    "build": "webpack --config webpack.prod.js",
     "build-serve": "npm run build && npm run serve",
     "lint": "eslint ./src",
     "test": "karma start",
     "e2e": "codeceptjs run --steps",
     "build-image": "node sharp.js",
-    "image-serve": "npm run build-image && npm run serve"
+    "image-serve": "npm run build-image && npm run serve",
+    "build-final": "npm run build && npm run build-image"
   },
   "keywords": [],
   "author": "",
