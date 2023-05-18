@@ -10,7 +10,7 @@ class Hero extends HTMLElement {
         <picture class="hero__img">
         <source media="(max-width: 480px)" srcset="./images/hero-image_4-small.jpg">
         <source media="(max-width: 800px)" srcset="./images/hero-image_4-large.jpg">
-            <img src="./images/hero-image_4-xlarge.jpg" alt="restaurant hero image">
+            <img src="./hero-image_4.jpg" alt="restaurant hero image">
         </picture>
         <div class="hero__content">
             <h1 class="hero__title">CHOOSE YOUR EXPERIENCE</h1>
