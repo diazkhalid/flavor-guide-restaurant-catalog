@@ -71,8 +71,8 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
     <article class="post-item">
-        <img class="post-item__thumbnail lazyload" src="${API_ENDPOINT.IMAGE_SMALL(restaurant.pictureId)}"
-        alt="Gambar restaurant ${restaurant.name}">
+        <img class="post-item__thumbnail lazyload" data-src="${API_ENDPOINT.IMAGE_SMALL(restaurant.pictureId)}"
+        alt="Restaurant ${restaurant.name}">
             <div class="post-item__content">
                 <p class="post-item__date">Lokasi <span href="#" class="post-item__date__author">${restaurant.city}</span>
                 </p>
